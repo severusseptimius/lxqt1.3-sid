@@ -1,0 +1,88 @@
+Package: lxqt-session
+Version: 1.3.0-0.1~S7
+Architecture: amd64
+Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Installed-Size: 488
+Depends: lxqt-qtplugin, lxqt-themes | lxqt-theme, x11-xkb-utils, libc6 (>= 2.34), libkf5windowsystem5 (>= 4.98.0), liblxqt1 (>= 1.2.0~), libproc2-0 (>= 2:4.0.3), libqt5core5a (>= 5.15.1), libqt5dbus5 (>= 5.14.1), libqt5gui5 (>= 5.7.0) | libqt5gui5-gles (>= 5.7.0), libqt5widgets5 (>= 5.11.0~rc1), libqt5x11extras5 (>= 5.6.0), libqt5xdg3 (>= 3.10.0~), libstdc++6 (>= 5), libudev1 (>= 183), libx11-6
+Recommends: lxqt-config, lxqt-notificationd, lxqt-policykit, lxqt-powermanagement, lxqt-session-l10n, lxqt-sudo, pcmanfm-qt, qlipper, qps, xscreensaver | gnome-screensaver | light-locker | i3lock | suckless-tools
+Provides: x-session-manager
+Filename: ./lxqt-session_1.3.0-0.1~S7_amd64.deb
+Size: 127608
+MD5sum: 2f0c4a002166687498b65acaa9075e8d
+SHA1: 63871ae9e5c96ffa48011b107f7104cb6d35a407
+SHA256: 79f61fd6440c6af7aafbf3084630da3e0bcf28d2bcbdca83645f6edfa5def77c
+Section: x11
+Priority: optional
+Homepage: https://github.com/lxqt/lxqt-session
+Description: session manager component for LXQt
+ LXQt is an advanced, easy-to-use, and fast desktop environment based on
+ Qt technologies.  It has been tailored for users who value simplicity,
+ speed, and an intuitive interface.  Unlike most desktop environments,
+ LXQt also works fine with less powerful machines.
+ .
+ This package contain the session manager component.
+
+Package: lxqt-session-l10n
+Source: lxqt-session
+Version: 1.3.0-0.1~S7
+Architecture: all
+Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Installed-Size: 444
+Depends: qttranslations5-l10n
+Filename: ./lxqt-session-l10n_1.3.0-0.1~S7_all.deb
+Size: 67228
+MD5sum: 35ca5054789e5e224a80fd80fc60a5f2
+SHA1: 412a59987c073397af325c77dfcd1020170b3565
+SHA256: 711834850fc52b318944b5bfa7073115b49817f48be17726c1714ce265e02473
+Section: localization
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/lxqt/lxqt-session
+Description: Language package for lxqt-session
+ The l10n files for lxqt-session.
+ .
+ This package contains the l10n files needed by lxqt-session.
+
+Package: lxqt-sudo
+Version: 1.3.0-0.1~S7
+Architecture: amd64
+Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Installed-Size: 88
+Depends: libc6 (>= 2.34), liblxqt1 (>= 1.2.0~), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.7.0) | libqt5gui5-gles (>= 5.7.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 9)
+Recommends: lxqt-sudo-l10n, lxqt-qtplugin
+Filename: ./lxqt-sudo_1.3.0-0.1~S7_amd64.deb
+Size: 24256
+MD5sum: a5861a665efebd4d35cb6f7cd5585e39
+SHA1: 27ee94e1ccb380f35fc49924fab430162022e2b2
+SHA256: 1bbc584cd93246b0ccfbd41245e445b99ec9367ff8bde3c60daf001860b1eb33
+Section: x11
+Priority: optional
+Homepage: https://github.com/lxqt/lxqt-sudo
+Description: Graphical Qt frontend for plain sudo
+ lxqt-sudo is a graphical Qt frontend for plain sudo(8) (for requesting
+ optional password in GUI fashion). When invoked it simply spawns child sudo
+ process with requested command (and arguments). If sudo requests user's
+ password, the GUI password dialog is shown and (after submit) the password is
+ provided to sudo.
+
+Package: lxqt-sudo-l10n
+Source: lxqt-sudo
+Version: 1.3.0-0.1~S7
+Architecture: all
+Maintainer: LXQt Packaging Team <pkg-lxqt-devel@lists.alioth.debian.org>
+Installed-Size: 155
+Depends: qttranslations5-l10n
+Filename: ./lxqt-sudo-l10n_1.3.0-0.1~S7_all.deb
+Size: 25988
+MD5sum: add7b42758e8fc07e09b36245944a2f9
+SHA1: a9ea7a8e2c1dadb7cb955e19b233d2d93cedec74
+SHA256: 95131ce94f687b8fe7e193a5a53368b0ba361114d2cb73c209c7032492339b91
+Section: localization
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/lxqt/lxqt-sudo
+Description: Language package for lxqt-sudo
+ The l10n files for lxqt-sudo.
+ .
+ This package contains the l10n files needed by lxqt-sudo.
+
